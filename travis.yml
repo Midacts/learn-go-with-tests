@@ -1,0 +1,7 @@
+sudo: false
+language: go
+go:
+  - master
+script:
+  - go get -t -v ./...
+  - go test -cover -v ./...
